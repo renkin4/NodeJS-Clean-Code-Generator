@@ -42,7 +42,9 @@ function activate(context) {
 			let entityIndexFile = path.join(entityFolderPath, `index.js`);
 
 			let entityContent = `export default function buildMake${upperCaseName} ({}) {
-	return function make${upperCaseName}
+	return function make${upperCaseName}({} = {}){
+		
+	}
 }`;
 			let entityIndexContent = `const make${upperCaseName} = buildMake${upperCaseName}({});
 
