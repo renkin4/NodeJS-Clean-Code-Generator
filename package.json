@@ -17,7 +17,7 @@
 		"commands": [
 			{
 				"command": "nodejs-clean-code-generator.createNodeJSCleanStructure",
-				"title": "Hello World"
+				"title": "Create NodeJS Clean Structure"
 			}
 		]
 	},

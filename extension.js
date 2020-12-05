@@ -41,12 +41,10 @@ function activate(context) {
 			let entityFile = path.join(entityFolderPath, `${name}.js`);
 			let entityIndexFile = path.join(entityFolderPath, `index.js`);
 
-			let entityContent = `
-export default function buildMake${upperCaseName} ({}) {
+			let entityContent = `export default function buildMake${upperCaseName} ({}) {
 	return function make${upperCaseName}
 }`;
-			let entityIndexContent = `
-const make${upperCaseName} = buildMake${upperCaseName}({});
+			let entityIndexContent = `const make${upperCaseName} = buildMake${upperCaseName}({});
 
 export default make${upperCaseName};`;
 
@@ -57,8 +55,7 @@ export default make${upperCaseName};`;
 		let createUseCasesFiles = () => {
 			let useCasesIndexFile = path.join(useCasesFolderPath, `index.js`);
 
-			let useCasesContent = `
-const ${name}Service = Object.freeze({});
+			let useCasesContent = `const ${name}Service = Object.freeze({});
 
 export default ${name}Service;`;
 
@@ -68,8 +65,7 @@ export default ${name}Service;`;
 		let createControllerFiles = () => {
 			let controllerIndexFile = path.join(controllerFolderPath, `index.js`);
 
-			let controllerIndexContent = `
-import {} from "../use_cases/${name}"
+			let controllerIndexContent = `import {} from "../use_cases/${name}"
 
 const ${name}Controller = Object.freeze({});
 
