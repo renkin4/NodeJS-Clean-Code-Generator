@@ -21,6 +21,11 @@
 			}
 		]
 	},
+	"publisher": "YangDeveloper",
+	"repository": {
+		"url": "https://github.com/renkin4/NodeJS-Clean-Code-Generator.git",
+		"type": "git"
+	},
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
