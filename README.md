@@ -14,8 +14,12 @@ CTRL + P / CMD + P (Create NodeJS Clean Structure).
 
 - None
 
-### 1.0.0
+### 0.0.1
 
 Initial release of nodejs-clean-code-generator
+
+### 0.0.2
+
+🐛 fixed minor issue with not returning proper function for entity
 
 **Enjoy!**

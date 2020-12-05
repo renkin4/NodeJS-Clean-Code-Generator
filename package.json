@@ -2,7 +2,7 @@
 	"name": "nodejs-clean-code-generator",
 	"displayName": "NodeJS Clean Code Generator",
 	"description": "Generate Clean code structor for user",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.51.0"
 	},
